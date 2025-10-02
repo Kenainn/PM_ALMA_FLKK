@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de DNI</title>
+    <link rel="stylesheet" href="./syles.css">
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Validador de DNI</h1>
+        <p>Ingresa tu número de DNI y la letra correspondiente:</p>
+        <form id="formDNI">
+            <label for="dni">Número de DNI:</label>
+            <input type="number" id="dni" name="dni" placeholder="12345678" required>
+            
+            <label for="letra">Letra del DNI:</label>
+            <input type="text" id="letra" name="letra" maxlength="1" placeholder="A" required>
+            
+            <button type="submit">Validar</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>
